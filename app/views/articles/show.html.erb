@@ -7,5 +7,13 @@
     <%= @article.text %>
 </p>
 
+<h2>Commentaires</h2>
+<%= render @article.comments %>
+
+
+
+<h2>Ajouter un commentaire :</h2>
+<%= render 'comments/form' %>
+
 <%= link_to 'Editer', edit_article_path %>
 <%= link_to 'Retour' , articles_path %>
